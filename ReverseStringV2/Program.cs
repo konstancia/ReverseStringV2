@@ -15,10 +15,10 @@ public class Program
         Console.WriteLine($"You have entered: {word}");
 
         // convert string to character
-        var chars = word.ToCharArray();
+         char[] chars = word.ToCharArray();
 
         //lenght of string
-        var lenght = chars.Length;
+        int lenght = chars.Length;
 
         Console.WriteLine($"String length is: {lenght}");
         Console.WriteLine($"We will now reverse the word {word}.");
@@ -31,7 +31,7 @@ public class Program
         // lenght-1 index count backwards
         //i-- (comes from end to index)
 
-        for (var i = lenght - 1; i >= 0; i--)
+        for (int i = lenght - 1; i >= 0; i--)
         {
             Console.WriteLine($" The reverse string is: {chars[i]}");
         }
