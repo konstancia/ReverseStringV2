@@ -25,41 +25,57 @@ public class Program
 
 
         //Array.reverse option
-        //Array.Reverse(chars);
-        //Console.WriteLine(new string(chars));
+        Array.Reverse(chars);
+        Console.WriteLine(new string(chars));
+
+        if (word == new string(chars))
+        {
+            Console.WriteLine("Word is palindrome");
+        }
+        else
+        {
+            Console.WriteLine("Word is not palindrome");
+        }
+
+
+
+
 
         // lenght-1 index count backwards
         //i-- (comes from end to index)
 
-        for (int i = lenght - 1; i >= 0; i--)
-        {
-            Console.WriteLine($" The reverse string is: {chars[i]}");
-        }
+        // for (int i = lenght - 1; i >= 0; i--)
+        //{
+        //Console.WriteLine($" The reverse string is: {chars[i]}");
+        //}
 
         //check for palindrome
 
-        int left = 0;
-        int right = word.Length - 1;
-        bool isPalindrome = true;
-        while (left < right)
-        {
-            if (word[left] != word[right])
-            {
-                isPalindrome = false;
-                break;
-            }
-            //compare left string(left to right)  and right string (right to left)
-            left++;
-            right--;
-        }
 
-        if (isPalindrome)
-        {
-            Console.WriteLine("The string is palindrome");
-        }
-        else
-        {
-            Console.WriteLine(("The string is not a palindrome"));
-        }
+        /**
+                int left = 0;
+                int right = word.Length - 1;
+                bool isPalindrome = true;
+                while (left < right)
+                {
+                    if (word[left] != word[right])
+                    {
+                        isPalindrome = false;
+                        break;
+                    }
+                    //compare left string(left to right)  and right string (right to left)
+                    left++;
+                    right--;
+                }
+
+                if (isPalindrome)
+                {
+                    Console.WriteLine("The string is palindrome");
+                }
+                else
+                {
+                    Console.WriteLine(("The string is not a palindrome"));
+                }
+                **/
     }
 }
